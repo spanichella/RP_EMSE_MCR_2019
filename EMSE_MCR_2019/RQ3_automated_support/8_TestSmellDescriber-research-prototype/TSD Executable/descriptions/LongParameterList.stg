@@ -1,0 +1,20 @@
+methodDescription(class_under_test, no_params, max_params, parameters) ::= <%
+<\n>- This method contains <no_params> parameters. These are too many. The maximum number of parameters
+<\n>  that should be passed to a method is <max_params>. The parameters are <parameters>.
+%>
+
+classDescription(only_one, class_under_test, number_of_methods, method_names) ::= <%
+-<\t>This test contains <if(only_one)>a method (<method_names>) that requires<else><number_of_methods> methods (<method_names>) that contains<endif> a large amount of parameters.
+<\n><\t>A long list of parameters is hard to understand, to use and may become
+<\n><\t>inconsistent over time. 
+%>
+
+longRefactoring(refactoring_number) ::= <%
+<\n><\t>(<refactoring_number>) If all parameters belong to the same object, replace the individual
+<\n><\t>data with the object itself. Otherwise introduce a new object that
+<\n><\t>contains all the passed data. 
+%>
+
+shortRefactoring(refactoring_number) ::= <%
+<\n>  Apply a refactoring suggested in (<refactoring_number>) to improve the code.
+%>

@@ -1,0 +1,15 @@
+TASK1
+
+(1) introducing
+ new objects to pass all the data, this to reduce the number of parameters
+needed in  fseTest, doFseTest. Finally i decided to split  testDuration in different tests.
+
+TASK2
+
+introduced a a new object to to reduce the number of parameters passed to the test suite, 
+thus refactoring  fmaTest.
+
+in basicTest I removed some duplicated assertions 
+     to reduce its length.
+
+

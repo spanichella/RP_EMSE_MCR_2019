@@ -1,0 +1,16 @@
+
+TASK1:
+
+In FlexibleStringExpanderTests:
+- split doFseTest into two methods
+In TimeDurationTests:
+- created class DataDuration to contain all parameters passed to assertDurationFields
+- create data class DataTimeDuration to contain all parameters passed to
+assertDurationLoop
+- I have Split assertDurationLoop into 2 methods
+
+
+TASK2:
+in org.apache.ofbiz.base.util.cache.test.UtilCacheTests
+	basicTest(UtilCache): detected and removed the LongMethod
+	assertKey(String, UtilCache, Object, Object, Object, int, Map):  detected and removed the LongParameterList

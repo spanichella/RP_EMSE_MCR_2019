@@ -1,0 +1,16 @@
+TASK1
+
+(1) The strategy I decided to use for reducing the high number of parameters used in 
+    "fseTest()- doFseTest() - assertDuration() and assertDurationLoop()" test methods
+    is to incapsulate such parameters in new objects. 
+    In the case of testDuration I decided to replaced it with  multiple tests, this
+    to reduce its overal length.
+
+TASK2
+
+ (2) As done in (1) I have introduced a new
+     object to reduce the number of parameters for "fmaTest() test method".
+     Finally for UtilCacheTests I refactored some assertions (I found some duplicated one) 
+     in basicTest.
+
+

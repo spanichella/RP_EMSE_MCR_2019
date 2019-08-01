@@ -1,0 +1,525 @@
+Q2.1,What kind of feedback would you expect from recommender-tools during code review?,,
+Q2.2,What kind of automation do you envision for automating code review practices? ,,
+Q2.3,"In regards to Documentation issues, what kind of automation do you envision 
+for the fixing and detection of these issues?",,
+Q2.4,"In regards to Style issues, what kind of automation do you envision 
+for the fixing and detection of these issues?",,
+Q2.5,"In regards to Structure issues, what kind of automation do you envision 
+for the fixing and detection of these issues?",,
+Q2.6,"In your opinion which Topics of code changes and their Detailed Changes could be 
+automatically detected and fixed by tools?",,
+Q2.7,Briefly describe how you would approach the detection and fixing of the issues described in your last answer.,,
+,,,
+Question,Comment ID,Occupation,Feedback
+Q2.1,feedback_recommender_1,Industrial Developer,"style issues (linting), structural issues (code quality/metrics), architectural violations, clean code principle violations"
+Q2.1,feedback_recommender_2,Other Occupation,"""Recommender-tools""? You mean tools that provide recommendation in an automated way? If that's the case, then logic errors, lacking test coverage, unused imports, typos (assuming code style is already automatically checked by another tool)"
+Q2.1,feedback_recommender_3,Industrial Developer,"Unnecessary / unused variables/methods
+Used of deprecated code"
+Q2.1,feedback_recommender_4,Other Occupation,Style
+Q2.1,feedback_recommender_5,Senior Researcher,"style, complex code, consistency"
+Q2.1,feedback_recommender_6,CS Student,Error corrections and input for better/different coding approaches
+Q2.1,feedback_recommender_7,CS Student,"ideas for programming patterns;
+showing where similar code was used / where the same thing is happening;"
+Q2.1,feedback_recommender_8,Open Source Developer,#NAME?
+Q2.1,feedback_recommender_9,Senior Researcher,where to jump to
+Q2.1,feedback_recommender_10,Senior Researcher,"Of two type, first i would like to know which changes are/will be required for the code review session. This would be useful to estimate the work required 
+ to perform the required changes."
+Q2.1,feedback_recommender_11,Industrial Developer,"I would like some ranking of the severity of the issue, which could be set at the beginning of the project. Like that, I could prioritise on the issues."
+Q2.1,feedback_recommender_12,Industrial Developer,Specifics about changes needed in the code.
+Q2.1,feedback_recommender_13,Other Occupation,Suggestions related to possible code changes aimed to fix the problem
+Q2.1,feedback_recommender_14,Senior Researcher,"maybe some clear suggestions of what am I missing in my proposed solution, such as how can I optimize the memory usage or if I am following the code style that should be adopted"
+Q2.1,feedback_recommender_15,Industrial Developer,refactoring
+Q2.1,feedback_recommender_16,CS Student,"Change suggestions for simple automatable fixes (e.g., alike a pull request)"
+Q2.1,feedback_recommender_17,CS Student,"Static analysis suggestions but additionally check comments and documentation is available, function calls and nesting, check complexity.. Give concrete suggestions what should be changed..."
+Q2.1,feedback_recommender_18,Senior Researcher,"I do not understand the question. I think what I get right now is the result of the build, i.e., how is the test coverage, are there style warnings, does the code compile, etc. This is all I need."
+Q2.1,feedback_recommender_19,Other Occupation,"I would expect simpler checks, like the ones about style especially, or coding conventions, that could be embedded in a recommender and be project dependent"
+Q2.1,feedback_recommender_20,Industrial Developer,"To be honest, I don't see how an automatic recommender tool can help me since I see the code review process as a communication platform between teammates. The human element is essential. However, it would be cool to get recommendations regarding the coding standards that are adopted by the team."
+Q2.1,feedback_recommender_21,Industrial Developer,"This is not a simple question, I think that, beside tools suggesting how to improve structure/style/documentation it would be great to have tools, anticipating the process of change. Very often during after submitting a patch, I have to wait some ""unproductive"" time before getting a feedback on my code. it would be in general useful to have tool that instantaneously provide me high- and low-level feedback on my code."
+Q2.1,feedback_recommender_22,Senior Researcher,I think automation in code review is also difficult to imagine to me. Maybe because I mainly to face to face code review and my team is non so large. Probably in more industrial context tools for collaborative code review and for automating some of its activity is an important requirement.
+Q2.1,feedback_recommender_23,Senior Researcher,N.A
+Q2.1,feedback_recommender_24,Industrial Developer,"Manual code reviews will still be done. But tool for Code Review are not  thorough enough to catch all the common problems a senior developer detect during a manual review. But from tools, I would expect in the same way feedback encapsulating aspects related to coding or documentation styles, recommendations regarding configuration of tools, and possible, reference to alternative solution to a given problem (e.g., from StackOverflow or other sources)."
+Q2.1,feedback_recommender_25,Senior Researcher,code duplication problem
+Q2.1,feedback_recommender_26,Senior Researcher,"Dead code analysis, duplication"
+Q2.1,feedback_recommender_27,Open Source Developer,"recommendation on:
+-Documentation and coding style for sure
+-Architecture patterns. - structure would be great,
+-Error handling and defects - but I think this is difficult
+-Test coverage and test quality perhaps..
+-Performance monitoring (did I have added a performance bug in my change?)
+-Security  (did I have added a security issue in my change?)"
+Q2.1,feedback_recommender_28,Industrial Developer,"Feedback on production and test code for quality issues (e.g., 
+structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style and possibly performance issues."
+Q2.1,feedback_recommender_29,Senior Researcher,Is the code ready to be merged. 
+Q2.1,feedback_recommender_30,Open Source Developer,"Style, coverage, lint, and automated test suite output."
+Q2.1,feedback_recommender_31,Industrial Developer,"Like linters do, comments of style and static analysis feedback like dead/duplicate code."
+Q2.1,feedback_recommender_32,Other Occupation,None
+Q2.1,feedback_recommender_33,Industrial Developer,"interface, logic, resources, security aspect, feedback on how to improve performance of my code (if possible), quality of test and production code...
+usually structure, style/documentation are easier to detect and developers are more prone to give feedback on this."
+Q2.1,feedback_recommender_34,Industrial Developer,"possibly feedback on all issues related to doc/style/structure, interface, logic, resource, security, check large defect, configuration ASATs and CD/CI scripts"
+Q2.1,feedback_recommender_35,Industrial Developer,"I think tools should be able to recognize, from the last change what shoul be the focus of the review: if I change somethig, he tools should give me feedback on what I have to change, add and or improve/delete."
+Q2.1,feedback_recommender_36,Industrial Developer,"would be could on the structure and quality of my code first, then on the performance of it, the less critical stuff, like doc/style/structure."
+Q2.1,feedback_recommender_37,Industrial Developer,"again , feedback on performance, security, style, documentation, logic"
+Q2.1,feedback_recommender_38,Industrial Developer,"for sure on doc, style structure, resource, large defects."
+Q2.1,feedback_recommender_39,Industrial Developer,"anything could be automated, without waiting feedback of other developers: doc, styl, structure, interface,  resources. I guess logic  and large defects are difficult to automate."
+Q2.1,feedback_recommender_40,Industrial Developer,"would be nice feedback on how to improve my style, structure, and quality of tests"
+Q2.1,feedback_recommender_41,Industrial Developer,Comments on certain lines of code were improvement is possible.
+Q2.1,feedback_recommender_42,Industrial Developer,"possibly feedback on the required changes, especially on the one that i usually do not receive feedback.."
+Q2.1,feedback_recommender_43,Industrial Developer,"performance, logic, style, and configuration aspects"
+Q2.1,feedback_recommender_44,Industrial Developer,"feedback on the quality of my test and production code, as quell as in doc, structure, resource, other changes, resources :)"
+Q2.1,feedback_recommender_45,Industrial Developer,"I would aspect tools recommending what to improve in my code, for example suggesting refactoring operations to simplify my code, too complex and too difficult pat of my code (the logic is too difficult too get), detect redundant/cloned/useless code (to simplify it)."
+Q2.1,feedback_recommender_46,CS Student,to improve my code
+Q2.1,feedback_recommender_47,Open Source Developer,"tool for automatically help developers configuring cd/c, runtime, static analysis tools & detect issues on
+
+structure (test and production code)
+documentation
+logic
+resources
+"
+Q2.1,feedback_recommender_48,Industrial Developer,"documentation, structure and logic"
+Q2.1,feedback_recommender_49,Industrial Developer,all elements of the taoxnomy
+Q2.1,feedback_recommender_50,Industrial Developer,"feedback on all elements of the taxonomy, but usually we receive them just on structure, documentation and some times logic"
+Q2.1,feedback_recommender_51,Open Source Developer,do not know/do not want to say
+Q2.1,feedback_recommender_52,Industrial Developer,"on other changes (configuration cd/ci and static analysis tools), resources, logic, check, structure, as developers usually provide feedback on structure and documentation. "
+Q2.2,envision_automation_1,Industrial Developer,Machine-Learning code-review bot that is trained by the manual code review process and can later on (with enough training data) be used to pre-screen changesets - possibly identifying a lot of possible issues before any human reviews the code.
+Q2.2,envision_automation_2,Other Occupation,"I really do not understand the question; what do you mean by ""what kind of automation""? Sorry that I cannot be of any help here"
+Q2.2,envision_automation_3,Industrial Developer,"Remove unused code
+Replace deprecated code when possible, otherwise fail the build"
+Q2.2,envision_automation_4,Other Occupation,Style should be corrected and logic highlighted
+Q2.2,envision_automation_5,Senior Researcher,"Checking, for example, if I am using the same name conventions of the codebase"
+Q2.2,envision_automation_6,CS Student,"Static code analysis (checking for dead code, correct function calls, ...)"
+Q2.2,envision_automation_7,CS Student,Styling issue detection; duplicate code detection; semantical duplicate detection;  case analysis; performance analysis
+Q2.2,envision_automation_8,Open Source Developer,"- Similar Code --> Refactoring suggestion
+- Pattern recognition and also some suggestion for setup the correct pattern
+- automated Documentation generation would be really cool=)"
+Q2.2,envision_automation_9,Senior Researcher,defect prediction and property level estimation for blocks of code
+Q2.2,envision_automation_10,Senior Researcher,"On the style: would be interesting to have a tool for evaluating my style consistency with respect to the whole project (the style applied in the organization). 
+
+documentation: documentation is usually not update and often incomplete. it would be great to have some automation to highlight the most relevant change that are needed to make it more complete and/or less inconsistent with the test/production code.
+
+structure: it would be also interesting to get feedback 
+- on the introduced  duplicated-dead code, 
+- test/code smells (bad design choices) added and/or overal test/code quality and readability in general. 
+etc.
+
+Possibly recommendation on 
+- runtime configurations,
+ - data & resource utilisation."
+Q2.2,envision_automation_11,Industrial Developer,Something very similar to static analysis tools (e.g. clang-tidy for C++).
+Q2.2,envision_automation_12,Industrial Developer,"I'd hope for a tool that would compare variables, statements and function calls not only against syntax definitions but against similar variables, statements and function calls from the codebase being changed, enabling a developer to adapt to local naming customs, and to see (and match) existing examples of the code being reviewed. "
+Q2.2,envision_automation_13,Other Occupation,Something integrated with the development environment that is able to recognize the problems during the insertion and not later on
+Q2.2,envision_automation_14,Senior Researcher,I expect the automation of the style and (to some extent) documentation issues. it would also be nice to automate the organization of the proposed solution. I am not sure if it is possible to automate the solution itself.
+Q2.2,envision_automation_15,Industrial Developer,strong naming suggestion. I think we can have word-net for naming or something like it.
+Q2.2,envision_automation_16,CS Student,Fix linter style warnings
+Q2.2,envision_automation_17,CS Student,automatically fix basic and common issue (e.g. style and documenation) or give suggestions.
+Q2.2,envision_automation_18,Senior Researcher,"I do not think that the process of code review is automatable. The easy things like test coverage or style breaks can already be checked easily with state-of-the-art tools like Maven, the rest does not follow easy to formulate rules and depends a lot on experience."
+Q2.2,envision_automation_19,Other Occupation,I'd like an automation pointing out to developers whether and where they have written highly inefficient code (like implementation with high space or time complexity)
+Q2.2,envision_automation_20,Industrial Developer,"I think a tool that can automatically recognize team ""culture"" and detect deviation from it, would be helpful in the reviewing process. By team culture I mean how team members name variables, where they put functionalities, how they document their code, and so on. "
+Q2.2,envision_automation_21,Industrial Developer,"I would like to have a summary of all required changes in my patch. Usually, depending on the reviewers experience and skills you get different types of feedback. It would be great to have a comprehensive tool that provide all these feedback in one shot, maybe prioritized or ranked according to the priorities/policies of the organization."
+Q2.2,envision_automation_22,Senior Researcher," I would try to understand which problems are recurrent in code reviews, e.g.,  defining patterns and anti-patterns characterizing the ""code review process and collaborations"".  The I would automatically leverage tools for detecting such anti-patterns to highlight potential problems. Many of problems we face during code review are related to the miss match between expectations and outcomes of a code review. Reviewer provide feedback that are not exhaustive or timely reported. This makes often code reviews unproductive. A simple automation toward this direction could be predicting the required code review changes."
+Q2.2,envision_automation_23,Senior Researcher,N.A
+Q2.2,envision_automation_24,Industrial Developer," I would expect  static tools profiling my changes and providing me feedback encapsulating aspects related to coding or documentation styles, recommendations regarding configuration of tools, and possible, reference to alternative solution to a given problem (e.g., from StackOverflow or other sources). Clearly, even recommendation on the general required changes on a submitted patch would be really useful in my opinion."
+Q2.2,envision_automation_25,Senior Researcher,change explanation
+Q2.2,envision_automation_26,Senior Researcher,"Mostly regarding style, interface, organization"
+Q2.2,envision_automation_27,Open Source Developer,"It would be great to have automation that not only provide information on the performed change, but actually predict issues and/or is able to answer the following questions automatically:
+
+- did I have introduced imperfections at the level of documentation and coding style..?
+- did I have introduced imperfections at the level of Architecture patterns. ?
+- did I have introduced imperfections at the level of Error handling and defects?
+- did I have introduced imperfections at the level of Test coverage and test quality?
+- did I have added a performance bug in my change?
+- did I have added a security bug in my change?
+
+Clearly having the location (e.g., the set of files) where the problem was introduced would be relevant too..
+"
+Q2.2,envision_automation_28,Industrial Developer,"Let me say that I would like automated feedback on production and test code for quality issues (e.g.,  structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style and possibly performance issues; Performance and Security issues
+
+From one side code and code changes metrics + code change patters 
+would a useful information to study previous changes in the software and its documentation to learn more about upcoming (and recurrent) mistakes.
+I would mine this information with some data mining techniques and machine learning to learn these patterns and/or identify some of the problems.
+Ont top of this, I think auto-fixing strategies could be envisioned.
+
+I'm a cloud developers, i.e., I dealing with cloud native (or aware) applications.
+In my context, I have to dealing with several
+- code and test quality checks
+- performance issues; 
+- security issues;
+- etc.
+
+It would be great to have tool measuring the cloud ""nativeness"" of my application, for example can we in code review  test or verify properties like ""resiliency, elasticity, low-coupling of microservices?"" This would be really useful for us and is something not available at code review and testing level."
+Q2.2,envision_automation_29,Senior Researcher,Auto check my code for styling and for potential logical or integration issues.
+Q2.2,envision_automation_30,Open Source Developer,"Before merge into the development/master branch, verification with a battery of tests (coverage/unit tests/integration tests/linting), and reported in a way that can be easily comprehended. "
+Q2.2,envision_automation_31,Industrial Developer,Finding code paths that are not tested and highlighting for easy viewing. Finding places where a variable is prone to mutation where it should be copied to avoid bugs.
+Q2.2,envision_automation_32,Other Occupation,Security
+Q2.2,envision_automation_33,Industrial Developer,"solutions summarizing the main problem affecting my patch, thus not a single individual feedback in one aspect, I would use some static analysis, novel metrics and summarization techniques for generating feedback related to:
+
+interface, logic, resources, security aspect, feedback on how to improve performance of my code (if possible), quality of test and production code...
+
+"
+Q2.2,envision_automation_34,Industrial Developer,"an unified tools that provides feedback that senior developers would give me in practice, but on all issues related to doc/style/structure, interface, logic, resource, security, check large defect, configuration ASATs and CD/CI scripts"
+Q2.2,envision_automation_35,Industrial Developer,"something that support me to focus on the minimal changes required for that specific review,. Each review has its own story and minimizing the feedback to the one that are relevant would be ideal to reduce the time of the review process"
+Q2.2,envision_automation_36,Industrial Developer,"automation should consider more recent concept of CD, CI, and automated testing, summarization techniques, thus providing feedback on: the way a CD/CI pipeline is structured or is efficient, when the test is not of good quality suggest replacement of test suite or test methods. Summarization techniques could be useful to provide all these information in an unified manner."
+Q2.2,envision_automation_37,Industrial Developer,I would define lightweight (not expensive metrics to compute) metrics to measure performance aspects..
+Q2.2,envision_automation_38,Industrial Developer,"automation aimed at proposing solutions to issues like doc, style structure, resource, large defects. I would imagine an automation that provide different solutions, but developers can select the best one."
+Q2.2,envision_automation_39,Industrial Developer,"something to detect, logic imperfection compared for example the actual documentation, detection performance/resource issues, and autofixes for more common problems related to doc, style, structure"
+Q2.2,envision_automation_40,Industrial Developer,"something that leverage automatic test cases generation strategies to produce better tests, or provide replacement for tests submitted for review or roviding feedback on the quality of my test code."
+Q2.2,envision_automation_41,Industrial Developer,In line sugestions while developing.
+Q2.2,envision_automation_42,Industrial Developer,"something that give me feedback on what improve in the artefact composing my patch, like an automated CodeReviewDoctor analyzing my patch and providing feedback on the status of the patch itself and what to change of it. This by analyzing the introduced changes, added files, etc."
+Q2.2,envision_automation_43,Industrial Developer,for example lightweight metrics highlighting whether my code introduced performance issues.
+Q2.2,envision_automation_44,Industrial Developer,"a comprehensive tools highlighting the changes to to perform or the defects introduced while introducing  (or evolving)  my patch, this would be really helpful."
+Q2.2,envision_automation_45,Industrial Developer,"As recommendation, I think refactorings in Code reviews should not only consider the degree of cohesion and coupling between classes only, it should also consider the degree of comprehensibility of the test and production code.
+
+Refactoring operations should be recommended in order to simplify the way the logic of the system is implemented (removing too complex branch and conditional statements, etc.). Thus, metrics modelling, readability,  logic and comprehensibility of implemented test and production code is something desirable.
+
+Tool recommenting the files to potentially modify maybe also specifying the specific change to perform. I think this should be possible wish some historical analysis of changes.
+
+Recomending reviewers according to their code ownership, the fact that they introduced previous similar changes (or similar structural or semantic clones).
+Having reviwers that have implemented similar stuff would be useful to detect redundant/cloned/useless code to simplify it.
+
+Tool to directly detect redundant/cloned/useless code to simplify it.
+
+
+"
+Q2.2,envision_automation_46,CS Student,not sure about it.
+Q2.2,envision_automation_47,Open Source Developer,"on the configuration level would be great to have tool suggesting
+what to change over the time. For example when configuring a CD and CI pipelines, what i need to change to improve the overall developers productivity and development process. We would need metrics measuring the efficiency of a CD/CI pipeline and then understand which configuration and/or steps of the pipeline could be optimized at the configuration level. 
+"
+Q2.2,envision_automation_48,Industrial Developer,"as cloud developers, something to ensure the quality of my cloud applications,
+in terms of performance and software quality. Thus, tools, giving me feedback on the quality of my patch, whether a new version of my patch improved in the aspects mentioned in the taxonomy. Thus, some automation based on static/dynamic analysis to provide me such information."
+Q2.2,envision_automation_49,Industrial Developer,all elements of the taoxnomy
+Q2.2,envision_automation_50,Industrial Developer,NA
+Q2.2,envision_automation_51,Open Source Developer,do not know/do not want to say
+Q2.2,envision_automation_52,Industrial Developer,not sure how to answer this
+Q2.3,automation_doc_1,Industrial Developer,"check completeness and correctness of javadoc tags with respect to rules defined by team (we try to avoid in-code documentation altogether, instead making the code easily readable to a point where javadoc is superfluous - so that's rather irrelevant for us. IDEs/compilers can already perform the tedious correctness checks if told to do so). A nice addition would be spell-checking, maybe providing suggested fixes."
+Q2.3,automation_doc_2,Other Occupation,"I really do not understand the question; what do you mean by ""what kind of automation""? Sorry that I cannot be of any help here"
+Q2.3,automation_doc_3,Industrial Developer,Fix typos
+Q2.3,automation_doc_4,Other Occupation,Full
+Q2.3,automation_doc_5,Senior Researcher,Check the use of names that are not used in the codebase
+Q2.3,automation_doc_6,CS Student,"Checking for completeness (listing of parameters, exceptions, return values for methods)"
+Q2.3,automation_doc_7,CS Student,too much comments --> red flag; not sticking to documentation guidelines like Javadoc -> red flag
+Q2.3,automation_doc_8,Open Source Developer,"- An alert --> where is a lack of documentation?
+- Documentation suggestions?
+- auto-generated readme file --> how to setup the application for developing"
+Q2.3,automation_doc_9,Senior Researcher,auto-doc gen which comments automatically and functionally with respect to code areas
+Q2.3,automation_doc_10,Senior Researcher,documentation is usually not update and often incomplete. it would be great to have some automation to highlight the most relevant change that are needed to make it more complete and/or less inconsistent with the test/production code.
+Q2.3,automation_doc_11,Industrial Developer,"Suggestions for naming fixes (cammelCase, underscore_). I often mix it up, because I happen to work with Qt that prefers cammelCase and C++ that is more fond of underscores."
+Q2.3,automation_doc_12,Industrial Developer,A diff between the source and the documentation that listed definitions that needed to be written up in the documentation.
+Q2.3,automation_doc_13,Other Occupation,"As regards comments, something that is able to properly determine the goal of the entity that needs to be commented; as regard naming something that is able to suggest a proper name to assign to an entity based on the naming conventions."
+Q2.3,automation_doc_14,Senior Researcher,"in Terms of Java, I would expect that the tool could help generating the javadocs,  the license header, fix the naming conventions if possible, propose some comments (maybe templates), suggest the right modifiers. Pretty much everything."
+Q2.3,automation_doc_15,Industrial Developer,extract real UML diagrammes from the code
+Q2.3,automation_doc_16,CS Student,"Inconsistency check (e.g., suggest documentation edit when a related code fragment changed)"
+Q2.3,automation_doc_17,CS Student,"fix function & class documentation, add basic documentation or make a suggestion"
+Q2.3,automation_doc_18,Senior Researcher,None. Sorry. :)
+Q2.3,automation_doc_19,Other Occupation,Both method and variable naming according to a project convention
+Q2.3,automation_doc_20,Industrial Developer,Detection of the right places to put comments
+Q2.3,automation_doc_21,Industrial Developer,"detection and auto-fix would be great, as they are usually related to recurrent problem, but again in some cases the detection of the problem would be already of great help for me. I do not want waste time of other developers with always the same issue, I think such a tool would make life of developers better."
+Q2.3,automation_doc_22,Senior Researcher,"as explained before I  I would try to understand which problems are recurrent in code reviews, e.g.,  defining patterns and anti-patterns characterizing the ""software documentation"", then  defining solutions around it."
+Q2.3,automation_doc_23,Senior Researcher,N.A
+Q2.3,automation_doc_24,Industrial Developer,"I would expect  static tools profiling my changes in the documentation and providing me feedback encapsulating aspects related to coding or documentation styles. Clearly, even recommendations on the general required changes on a submitted patch would be really useful in my opinion."
+Q2.3,automation_doc_25,Senior Researcher,tractability issue
+Q2.3,automation_doc_26,Senior Researcher,"Correcting names, typos and modifiers"
+Q2.3,automation_doc_27,Open Source Developer,"We require comprehensive, clear documentation and strict, simple coding style. We have our own Android code guidelines and use Android coding guidelines for contributors as a basis. Clean Code: A Handbook of Agile Software Craftsmanship� (has recommendations on clean coding and code styling).
+It would be great to have tools  able to answer the following questions automatically:
+- did I have introduced imperfections at the level of documentation and coding style..?
+Again, having the location (e.g., the set of files) where the problem was introduced would be relevant too.."
+Q2.3,automation_doc_28,Industrial Developer,"Let me say that I would like automated feedback on production and test code for quality issues (e.g.,  structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style and possibly performance issues; Performance and Security issues
+From one side code and code changes metrics + code change patters 
+would a useful information to study previous changes in the software and its documentation to learn more about upcoming (and recurrent) mistakes.
+I would mine this information with some data mining techniques and machine learning to learn these patterns and/or identify some of the problems.
+Ont top of this, I think auto-fixing strategies could be envisioned."
+Q2.3,automation_doc_29,Senior Researcher,Maybe auto fill 
+Q2.3,automation_doc_30,Open Source Developer,Lint on documentation formatting to match a style.  Tools like `markdownlint` or some spell/grammar checkers that work only on docs files or on code/docs files.
+Q2.3,automation_doc_31,Industrial Developer,Naming inconsistencies like using snake case or camel case or pascal case in some variation.
+Q2.3,automation_doc_32,Other Occupation,N
+Q2.3,automation_doc_33,Industrial Developer,"i would use NLP parsing to detect recsurent issues, providing auto-fix solutions"
+Q2.3,automation_doc_34,Industrial Developer,"there are many tools for detecting such issues, very few on proposing patches. Tools based on some text mining and nlp analysis to detect patterns used o correct mistakes in the documentation."
+Q2.3,automation_doc_35,Industrial Developer,"for example,  detection and auto-fix are still not available for code review, but they should be suggested only when this is relevant for the review. Metrics based on static, dynamic analysis or detection strategies based on some nlp a alysis and similar approaches would be useful here I guess."
+Q2.3,automation_doc_36,Industrial Developer,"i think tools like pmd, checkstyle alread y detect such problems, but are not always so accurate.."
+Q2.3,automation_doc_37,Industrial Developer,"i think tools for this already exists, find bugs, pmd , checkstyles.."
+Q2.3,automation_doc_38,Industrial Developer,"study with nlp, or other analysis recurrent patterns on how to write or not to write docs and provide potential fixes/solutions - the developers can keep the solutions they prefer"
+Q2.3,automation_doc_39,Industrial Developer, autofixes
+Q2.3,automation_doc_40,Industrial Developer,detection of recurrent problems and auto-fixes (or recommendation of potential solutions?)
+Q2.3,automation_doc_41,Industrial Developer,Signaling when a function/class/object was incorrectly named and not found in the solution.
+Q2.3,automation_doc_42,Industrial Developer,something that give me feedback on the quality of my documentation.
+Q2.3,automation_doc_43,Industrial Developer,it would be fine to to have feedback on the documentation changes to perform
+Q2.3,automation_doc_44,Industrial Developer,"a comprehensive tool highlighting the changes to to perform or the defects introduced in the documentation, while introducing (or evolving) my patch"
+Q2.3,automation_doc_45,Industrial Developer,"I think documentation metrics, patterns or antipatterns in the code or in the documentation could be statically studied to determine things
+-  to remove or changes (using the notion of antipatterns);
+- things to add using the notion of patterns;
+- detecting things that are inconsistent between documentation and the source code (this would be really useful in our continuous delivery pipeline)
+"
+Q2.3,automation_doc_46,CS Student,not sure about it.
+Q2.3,automation_doc_47,Open Source Developer,not sure about this.
+Q2.3,automation_doc_48,Industrial Developer,"automation on detecting and fixing recurrent and relevant documentation issues
+for my organization"
+Q2.3,automation_doc_49,Industrial Developer,  in all elements of the taxonomy
+Q2.3,automation_doc_50,Industrial Developer,NA
+Q2.3,automation_doc_51,Open Source Developer,do not know/do not want to say
+Q2.3,automation_doc_52,Industrial Developer,there are tools like check styles and pmd for java
+Q2.4,automation_style_1,Industrial Developer,"auto-formatting, fixing indent and tab/spaces - but that's not the concern of a code-review tool (we have code quality tools like sonarqube for that purpose)."
+Q2.4,automation_style_2,Other Occupation,"I really do not understand the question; what do you mean by ""what kind of automation""? Sorry that I cannot be of any help here"
+Q2.4,automation_style_3,Industrial Developer,"Formatting
+Add missing annotations"
+Q2.4,automation_style_4,Other Occupation,Full
+Q2.4,automation_style_5,Senior Researcher,Most of these kind of issues should be automatically fixed by the automatic tool.
+Q2.4,automation_style_6,CS Student,"consistend usage (eg. single line if statements) auto line break at max line length, linting for indention and white space usage, highlight TODO's"
+Q2.4,automation_style_7,CS Student,"ALL OF THEM, at least recommend changes"
+Q2.4,automation_style_8,Open Source Developer,"I actually think style automation is already developed pretty good consider tools like e.g. prettier, lint  and so"
+Q2.4,automation_style_9,Senior Researcher,auto indentation tools
+Q2.4,automation_style_10,Senior Researcher,"would be interesting to have a tool for evaluating my style consistency with respect to the whole project (the style applied in the organization). if checkstyle detect a style issue that is usually not remove in my organization, than, that warning is not a real issue. Style is something that is related to a specific project."
+Q2.4,automation_style_11,Industrial Developer,I am not so much bothered by the Style issues. Most of them are quick to fix or the IDE (Qt Creator) already takes care of it.
+Q2.4,automation_style_12,Industrial Developer,I feel like linters (e.g. eslint for Javascript) do a reasonable job of this. Making it easier for teams to add their own local rules would be helpful.
+Q2.4,automation_style_13,Other Occupation,"Possibly, based on the output of static analysis tools try to automatically suggest a fix especially for brackets, indentation, blank lines and whitespaces"
+Q2.4,automation_style_14,Senior Researcher,For the style? Everything should be automated. I think there are many tools already available to help on that (for example Jalopy?)
+Q2.4,automation_style_15,Industrial Developer,I think this issue is already fixed by industrial tool such as Visual Stdio
+Q2.4,automation_style_16,CS Student,"Fix linter style warnings (e.g., whitespace, blank lines) but don't remove TODO comments without user review !"
+Q2.4,automation_style_17,CS Student,"make style suggestion if something could/can be improved, don't fix it automatically. "
+Q2.4,automation_style_18,Senior Researcher,None. Sorry. :)
+Q2.4,automation_style_19,Other Occupation,"I guess that this category is the easier one to fix, the I'll address mostly all of them"
+Q2.4,automation_style_20,Industrial Developer,This can be done by placing a style checker in the process such that all developers obey the same style. 
+Q2.4,automation_style_21,Industrial Developer,I think about style issues Checkstyle and similar tools are enough... while for other problem I'm not sure there are emerging and relevant tools for automating code review.
+Q2.4,automation_style_22,Senior Researcher,"I think toolssuch as Checstyle already fix/handle such problems.
+
+However, as explained before I  I would try to understand which problems are recurrent in code reviews, e.g.,  defining patterns and anti-patterns characterizing the ""code styles"", then  defining solutions around it."
+Q2.4,automation_style_23,Senior Researcher,N.A
+Q2.4,automation_style_24,Industrial Developer,"I would expect  static tools profiling my changes my code and providing me feedback encapsulating aspects related to coding styles or other aspects. Clearly, even recommendations on the general required changes on a submitted patch would be really useful in my opinion."
+Q2.4,automation_style_25,Senior Researcher,"probably, automatic correction can be used. but that part is a pure engineering problem."
+Q2.4,automation_style_26,Senior Researcher,"Everything listed expect removing commented out code, since it may be important and grouping."
+Q2.4,automation_style_27,Open Source Developer,"We require comprehensive, clear documentation and strict, simple coding style. We have our own Android code guidelines and use Android coding guidelines for contributors as a basis. “Clean Code: A Handbook of Agile Software Craftsmanship” (has recommendations on clean coding and code styling).
+
+It would be great to have tools  able to answer the following questions automatically:
+
+- did I have introduced imperfections at the level of documentation and coding style..?
+
+Again, having the location (e.g., the set of files) where the problem was introduced would be relevant too.."
+Q2.4,automation_style_28,Industrial Developer,"Let me say that I would like automated feedback on production and test code for quality issues (e.g.,  structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style and possibly performance issues; Performance and Security issues
+
+From one side code and code changes metrics + code change patters 
+would a useful information to study previous changes in the software and its documentation to learn more about upcoming (and recurrent) mistakes.
+I would mine this information with some data mining techniques and machine learning to learn these patterns and/or identify some of the problems.
+Ont top of this, I think auto-fixing strategies could be envisioned.
+"
+Q2.4,automation_style_29,Senior Researcher,Make sure the code confirms to the project style
+Q2.4,automation_style_30,Open Source Developer,"Tools like flake8 (python) or gometalinter (golang) and similar that detect flaws in source code.   Some of these can suggest fixes, or have companion tools (python: autopep8, golang: gofmt) that can automate these fixes."
+Q2.4,automation_style_31,Industrial Developer,Whitespace and indentation. These can be very easily fixed.
+Q2.4,automation_style_32,Other Occupation,N
+Q2.4,automation_style_33,Industrial Developer,"i would use NLP analysis to study the coding style of the team/project, thus detect recurrent style issues (explaining what is wrong in my style), providing auto-fix solutions when possible.."
+Q2.4,automation_style_34,Industrial Developer,as in the previous case:  some text mining and nlp analysis to detect patterns used o correct mistakes in the style.
+Q2.4,automation_style_35,Industrial Developer,similar comments as before (detection and auto-fix).
+Q2.4,automation_style_36,Industrial Developer,"i think tools like pmd, checkstyle alread y detect such problems, but are not always so accurate.."
+Q2.4,automation_style_37,Industrial Developer,"i think tools for this already exists, find bugs, pmd , checkstyles.."
+Q2.4,automation_style_38,Industrial Developer,a similar automation written before but based on static analysis.
+Q2.4,automation_style_39,Industrial Developer, autofixes 
+Q2.4,automation_style_40,Industrial Developer,detection of recurrent problems and auto-fixes (or recommendation of potential solutions?)
+Q2.4,automation_style_41,Industrial Developer,Automaticly structure the code such that it confirms with the standards.
+Q2.4,automation_style_42,Industrial Developer,something that give me feedback on the quality of my code.
+Q2.4,automation_style_43,Industrial Developer,as in the previous answer
+Q2.4,automation_style_44,Industrial Developer,"a comprehensive tool highlighting the changes to to perform or the defects introduced in the style, while introducing (or evolving) my patch"
+Q2.4,automation_style_45,Industrial Developer,"I think style metrics, patterns or antipatterns in the code or in the documentation could be statically studied to determine things
+-  to remove or changes (using the notion of antipatterns);
+- things to adapt using the notion of patterns;
+- detecting things that are inconsistent between documentation and the source code style (this would be really useful in our continuous delivery pipeline)"
+Q2.4,automation_style_46,CS Student,not sure about it.
+Q2.4,automation_style_47,Open Source Developer,not sure about this.
+Q2.4,automation_style_48,Industrial Developer,"automation on detecting and fixing recurrent and relevant style issues
+for my organization"
+Q2.4,automation_style_49,Industrial Developer,  in all elements of the taxonomy
+Q2.4,automation_style_50,Industrial Developer,NA
+Q2.4,automation_style_51,Open Source Developer,do not know/do not want to say
+Q2.4,automation_style_52,Industrial Developer,there are tools like check styles and pmd for java
+Q2.5,automation_structure_1,Industrial Developer,"- medium term: provide statistics over code review changeset -> findings pairs to identify and track the main issues any given team has, finding recurring issues to improve on etc.
+- in the longer term: every code review input and result should be fed into a machine learning system (neural networks, deep learning), in order to train it to detect a lot of the recurring issues within a given team."
+Q2.5,automation_structure_2,Other Occupation,"I really do not understand the question; what do you mean by ""what kind of automation""? Sorry that I cannot be of any help here"
+Q2.5,automation_structure_3,Industrial Developer,"Add missing modifiers like: static, final, public, private, etc.
+Correct the case in names (camelCase, underscore_case)"
+Q2.5,automation_structure_4,Other Occupation,Full
+Q2.5,automation_structure_5,Senior Researcher,"In this case, the tool should assist the developers without automatically performing the changes."
+Q2.5,automation_structure_6,CS Student,hint for code duplication
+Q2.5,automation_structure_7,CS Student,"Naming, code flow, unused code detection, ..."
+Q2.5,automation_structure_8,Open Source Developer,"Pattern detection with suggestion ->e.g. I see you build something which would be smart to structure in a factory pattern -> here my suggestion for it..
+
+That would be really hard though to realise I guess, but cool"
+Q2.5,automation_structure_9,Senior Researcher,automatic re-modularization tools
+Q2.5,automation_structure_10,Senior Researcher,"structure: it would be also interesting to get feedback 
+- on the introduced  duplicated-dead code, 
+- test/code smells (bad design choices) added and/or overal test/code quality and readability in general. 
+etc.
+
+Maybe this could be done by analyzing code changes?"
+Q2.5,automation_structure_11,Industrial Developer,"This is an incredibly difficult task (for C++).  There have been some attempts to create tools that could help you with being coherent to the C++ Core Guidelines (as well as modernize your code base), e.g. Cevelop that has been developed at HSR Rapperswil. Unfortunately, it works with Eclipse and based on the last Twitter poll it appears that few people are using it (because of Eclipse). "
+Q2.5,automation_structure_12,Industrial Developer,"I suppose automation could, for example, warn about long methods, but I can't picture how to build a model for local convention ('Testing') or architect taste ('New Functionality')."
+Q2.5,automation_structure_13,Other Occupation,Something aimed to propose a kind of refactoring of the actual code base
+Q2.5,automation_structure_14,Senior Researcher,"Again I think I would expect a bit of everything. Although probably in the format of suggestions, for example, learning from past data and providing suggestions in the future? 
+
+For example when I am about to commit class A, some features of class A (according to past data) indicates that class A should be moved to package B"
+Q2.5,automation_structure_15,Industrial Developer,code coulping
+Q2.5,automation_structure_16,CS Student,"Semantic dead code, semantic deduplication; more changes often require thorough review though"
+Q2.5,automation_structure_17,CS Student,"highlight dead code, unreachable code, etc. suggest refactoring options (new functions or classes), suggest code that can be removed because of duplicates..."
+Q2.5,automation_structure_18,Senior Researcher,None. Sorry. :)
+Q2.5,automation_structure_19,Other Occupation,New functionality because is the harder thing to improve for the developers; most of the other branches of the taxonomy might be also supported by IDEs
+Q2.5,automation_structure_20,Industrial Developer,Maybe refactoring suggestions based on coupling and cohesion metrics
+Q2.5,automation_structure_21,Industrial Developer,"In this case, I would like to have a tool suggesting feedback on structural aspects according to any of types of artifacts I have in my patch: documentation, test and production code, etc. Possibly refactoring of tests not based only on coupling concepts but also ""incapsulating"" the need of having separated performance from functional testing and or having tests separated in  a way that they help to test different properties of microservices of cloud applications."
+Q2.5,automation_structure_22,Senior Researcher,"as explained before I  I would try to understand which problems are recurrent in code reviews, e.g.,  defining patterns and anti-patterns characterizing the ""Structure issues"", then  defining solutions around it."
+Q2.5,automation_structure_23,Senior Researcher,N.A
+Q2.5,automation_structure_24,Industrial Developer,"I would expect  static tools profiling my changes my code and providing me feedback encapsulating aspects related to code (and test) structure, coding styles or other aspects. Clearly, even recommendations on the general required changes on a submitted patch would be really useful in my opinion."
+Q2.5,automation_structure_25,Senior Researcher,code smell and its score indicating whether it is worthwhile to fix the smell.
+Q2.5,automation_structure_26,Senior Researcher,Change function
+Q2.5,automation_structure_27,Open Source Developer,"
+It would be great to have tools  able to answer the following question automatically:
+
+- did I have introduced imperfections at the level of Architecture patterns. ?
+
+Again, having the location (e.g., the set of files) where the problem was introduced would be relevant too.."
+Q2.5,automation_structure_28,Industrial Developer,"Let me say that I would like automated feedback on production and test code for quality issues (e.g.,  structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style and possibly performance issues; Performance and Security issues
+
+From one side code and code changes metrics + code change patters 
+would a useful information to study previous changes in the software and its documentation to learn more about upcoming (and recurrent) mistakes.
+I would mine this information with some data mining techniques and machine learning to learn these patterns and/or identify some of the problems.
+Ont top of this, I think auto-fixing strategies could be envisioned.
+"
+Q2.5,automation_structure_29,Senior Researcher,Make sure there is no duplicates 
+Q2.5,automation_structure_30,Open Source Developer,"Higher level tools like Sonarqube can detect these, but I find them to be less useful than human analysis."
+Q2.5,automation_structure_31,Industrial Developer,"Dead code, duplicate code and redundant code."
+Q2.5,automation_structure_32,Other Occupation,N
+Q2.5,automation_structure_33,Industrial Developer,not sure here we need novel tool :)
+Q2.5,automation_structure_34,Industrial Developer,as in the previous case:  some text mining and nlp analysis to detect patterns used o correct mistakes in the structure.
+Q2.5,automation_structure_35,Industrial Developer,similar comments as before (detection and auto-fix).
+Q2.5,automation_structure_36,Industrial Developer,"i think tools like pmd, checkstyle alread y detect such problems, but are not always so accurate.."
+Q2.5,automation_structure_37,Industrial Developer,"i think tools for this already exists, find bugs, pmd , checkstyles.."
+Q2.5,automation_structure_38,Industrial Developer,a similar automation written before but based on static analysis.
+Q2.5,automation_structure_39,Industrial Developer, autofixes 
+Q2.5,automation_structure_40,Industrial Developer,detection of recurrent problems and auto-fixes (or recommendation of potential solutions?)
+Q2.5,automation_structure_41,Industrial Developer,Comment's concerning the given example in Solution Approach.
+Q2.5,automation_structure_42,Industrial Developer,something that give me feedback on the structure of my documentation.
+Q2.5,automation_structure_43,Industrial Developer,as in the previous answer.
+Q2.5,automation_structure_44,Industrial Developer,"a comprehensive tool highlighting the changes to to perform or the defects introduced in the structure, while introducing (or evolving) my patch"
+Q2.5,automation_structure_45,Industrial Developer,"As wrote before.
+
+As recommendation, I think refactorings in Code reviews should not only consider the degree of cohesion and coupling between classes only, it should also consider the degree of comprehensibility of the test and production code.
+
+Refactoring operations should be recommended in order to simplify the way the logic of the system is implemented (removing too complex branch and conditional statements, etc.). Thus, metrics modelling, readability,  logic and comprehensibility of implemented test and production code is something desirable.
+
+Tool recommenting the files to potentially modify maybe also specifying the specific change to perform. I think this should be possible wish some historical analysis of changes.
+
+Recomending reviewers according to their code ownership, the fact that they introduced previous similar changes (or similar structural or semantic clones).
+Having reviwers that have implemented similar stuff would be useful to detect redundant/cloned/useless code to simplify it.
+
+Tool to directly detect redundant/cloned/useless code to simplify it."
+Q2.5,automation_structure_46,CS Student,not sure about it.
+Q2.5,automation_structure_47,Open Source Developer,not sure about this.
+Q2.5,automation_structure_48,Industrial Developer,"automation on detecting and fixing recurrent and relevant structure issues
+for my organization"
+Q2.5,automation_structure_49,Industrial Developer,  in all elements of the taxonomy
+Q2.5,automation_structure_50,Industrial Developer,NA
+Q2.5,automation_structure_51,Open Source Developer,do not know/do not want to say
+Q2.5,automation_structure_52,Industrial Developer,there are tools like check styles and pmd for java
+Q2.6,automation_topics_1,Industrial Developer,
+Q2.6,automation_topics_2,Other Occupation,
+Q2.6,automation_topics_3,Industrial Developer,
+Q2.6,automation_topics_4,Other Occupation,Style and structure 
+Q2.6,automation_topics_5,Senior Researcher,All those related to style.
+Q2.6,automation_topics_6,CS Student,"common statements like if, for, while, ..."
+Q2.6,automation_topics_7,CS Student,Styling and duplicates and naming detection
+Q2.6,automation_topics_8,Open Source Developer,Documentation suggestion I see as realiasible
+Q2.6,automation_topics_9,Senior Researcher,I did not understand this question
+Q2.6,automation_topics_10,Senior Researcher,"Difficult to say, ... style, documentation and structure for sure many. Corrective/Maintenance changes are the more difficult. For these cases (Corrective/Maintenance changes), even just have a predictor of required changes would be fine."
+Q2.6,automation_topics_11,Industrial Developer,"Textual Documentation, Logic(Compare), Memory Management, Data and Resource Manipulation, Variable initialization"
+Q2.6,automation_topics_12,Industrial Developer,Linters address most of the Style concerns. It seems like Structure/Organization would be the next-most low-hanging fruit. 
+Q2.6,automation_topics_13,Other Occupation,Style
+Q2.6,automation_topics_14,Senior Researcher,"This question is not very clear. Is there a category called ""Code changes""? I couldn't see it."
+Q2.6,automation_topics_15,Industrial Developer,missed property of class in processing
+Q2.6,automation_topics_16,CS Student,Style issues
+Q2.6,automation_topics_17,CS Student,"Many basic style issues which are not subject to choice or personal taste (e.g. indentation, whitespace usage, brackets, etc.). Structure: Hightlighting dead, duplicate and unreachable code... - maybe even removing it... Logic: Detecting runtime inefficiency (complexity too high maybe...)"
+Q2.6,automation_topics_18,Senior Researcher,None. Sorry. :)
+Q2.6,automation_topics_19,Other Occupation,Documentation and style
+Q2.6,automation_topics_20,Industrial Developer,The style section can be automated. I'm not really sure about the rest
+Q2.6,automation_topics_21,Industrial Developer," Think the initial step is detecting the problems/issues considering the changes performed over the time, before or during the code review, then find automation for fix this problem start to be a reasonable direction for most topics :)"
+Q2.6,automation_topics_22,Senior Researcher,"most of documentation/style and structure. In limited cases logic (alrogithm/perf.), resources and large defects. Maybe wrong/improper CR, CD, CI configurations? "
+Q2.6,automation_topics_23,Senior Researcher,N.A
+Q2.6,automation_topics_24,Industrial Developer,"I think every topics that can be quantitatively studied from the history of the project. E.g., recurrent documentation changes, or changes in the coding style would be useful to be collected and used to recommend future changes."
+Q2.6,automation_topics_25,Senior Researcher,"all the Styles, code conventions, and code duplication"
+Q2.6,automation_topics_26,Senior Researcher,Textual documentation and style
+Q2.6,automation_topics_27,Open Source Developer,"I think it is in theory possible to  to automatically answer the questions:  - did I have introduced imperfections at the level of documentation and coding style..? - did I have introduced imperfections at the level of Architecture patterns. ? - did I have introduced imperfections at the level of Error handling and defects? - did I have introduced imperfections at the level of Test coverage and test quality? - did I have added a performance bug in my change? - did I have added a security bug in my change?  I also believe that it would be possible to find out the location (e.g., the set of files) where the problems were introduced."
+Q2.6,automation_topics_28,Industrial Developer,"feedback on production and test code for quality issues (e.g.,  structure, coverage, suggestions on how to refactoring production and test code, etc.), documentation & coding style . Performance and Security issues are the more difficult to automate I guess, but can we monitor the with performance or security metrics?"
+Q2.6,automation_topics_29,Senior Researcher,"Styling, integration problems.   "
+Q2.6,automation_topics_30,Open Source Developer,most style and static structure analysis could be
+Q2.6,automation_topics_31,Industrial Developer,Finding redundant and duplicate code
+Q2.6,automation_topics_32,Other Occupation,N
+Q2.6,automation_topics_33,Industrial Developer,"any of: interface, logic, resources, security aspect, feedback on how to improve performance of my code (if possible), quality of test and production code. Important to mention that all of these require new metrics and concepts. I t would be cool to have a tool that detect introduce performance (or test quality) issues during code review and before put the changes in the CD/CI pipeline."
+Q2.6,automation_topics_34,Industrial Developer,"logic, tests quality, ASAT configuration, doc, style, structure, performance more difficult is security.."
+Q2.6,automation_topics_35,Industrial Developer,I would say most of them.
+Q2.6,automation_topics_36,Industrial Developer,"automation should consider more recent concept of CD, CI, and automated testing, summarization techniques, thus providing feedback on: the way a CD/CI pipeline is structured or is efficient, when the test is not of good quality suggest replacement of test suite or test methods. Summarization techniques could be useful to provide all these information in an unified manner."
+Q2.6,automation_topics_37,Industrial Developer,"feedback on performance, security, style, documentation. Logic is difficult, but could be detected by analyzing both documentationa and code and detecting inconsistencies."
+Q2.6,automation_topics_38,Industrial Developer,"I think also on ""resource, and simple defects"" many problems are very recurrent in code review and I think this make it possible to predict or suggest recommendations for them."
+Q2.6,automation_topics_39,Industrial Developer,"doc, styl, structure, interface,  resources"
+Q2.6,automation_topics_40,Industrial Developer,"most of doc/style/structure/check, etc. detection of recurrent problems and auto-fixes. For testing, as explained before."
+Q2.6,automation_topics_41,Industrial Developer,Nameing in documentary
+Q2.6,automation_topics_42,Industrial Developer,it depends on the automation we want to implement. Having an automated initial feedback on the quality of the patch would be great. Then semi-automated solutions could be integrated ...
+Q2.6,automation_topics_43,Industrial Developer,"performance, gui,  and configuration need still some automated support in code reviews"
+Q2.6,automation_topics_44,Industrial Developer,"most of them, the defects are usually less easy to detect (humans are more efficient on this), but tools can at least help on locating it."
+Q2.6,automation_topics_45,Industrial Developer,"for sure on style, documentation, structure, logic, other changes, resources, .. "
+Q2.6,automation_topics_46,CS Student,most of them I think
+Q2.6,automation_topics_47,Open Source Developer,I think in theory all of changes of the taxonomy that are not strictly related to detection of defects
+Q2.6,automation_topics_48,Industrial Developer,"most of them but in different ways: (i) some of the could be just recommended to change, while other could be also autofixed, or solutions could be proposed by analysing historical changes and data from repositories (e.g., versioning systems and issue tracking system)."
+Q2.6,automation_topics_49,Industrial Developer,  in all elements of the taxonomy
+Q2.6,automation_topics_50,Industrial Developer,NA
+Q2.6,automation_topics_51,Open Source Developer,do not know/do not want to say
+Q2.6,automation_topics_52,Industrial Developer,not sure how to answer this
+Q2.7,automation_suggestions_1,Industrial Developer,
+Q2.7,automation_suggestions_2,Other Occupation,
+Q2.7,automation_suggestions_3,Industrial Developer,
+Q2.7,automation_suggestions_4,Other Occupation,Automatic correction and notification 
+Q2.7,automation_suggestions_5,Senior Researcher,Automatically fixing the issues before committing.
+Q2.7,automation_suggestions_6,CS Student,"detection: regex parsing, fixing: applying correct code structure"
+Q2.7,automation_suggestions_7,CS Student,"IntelliJ includes recommendation while programming, something in that style."
+Q2.7,automation_suggestions_8,Open Source Developer,"Try to find characteristics e.g. for a method description based on the code itself 
+--> can I use method name + parameters + other method and classes called within the method + instantiation + .... to predict what that method actually does --> can I generate documentation out of it?"
+Q2.7,automation_suggestions_9,Senior Researcher,I did not understand the previous question
+Q2.7,automation_suggestions_10,Senior Researcher,I basically explained it in the survey :)
+Q2.7,automation_suggestions_11,Industrial Developer,"These kind of tools already exist, but are not necessarily integrated with the commonly used IDEs (e.g. valgrind for memory checks). For other things (initialization, undefined behavior, logic compare) I would prefer to rely on the compiler. For textual documentation, I would like the IDE to handle the naming."
+Q2.7,automation_suggestions_12,Industrial Developer,"As alluded to above, existing variables, statements, and functions could be used as models when reviewing new code."
+Q2.7,automation_suggestions_13,Other Occupation,Look at the answer given to the Style issues comment. try to automatically apply basic fix aimed to change the style like add whitespace or remove blank lines
+Q2.7,automation_suggestions_14,Senior Researcher,"Considering the topics ""Solution Approach"" and ""Organization"", I would first check the literature for each Detailed Change to understand the ""State of the Art"" of automatic detection for that specific Detailed Change. In this way I would work on automatically detecting each part first and in the end I would have an entire framework (much a like a divide to conquer strategy)."
+Q2.7,automation_suggestions_15,Industrial Developer,for example missing an data filed in new and edit forms
+Q2.7,automation_suggestions_16,CS Student,Enforce linter rules and propose a pull request with the changes
+Q2.7,automation_suggestions_17,CS Student,see as quickly describe after each statement/topic above.
+Q2.7,automation_suggestions_18,Senior Researcher,Not applicable.
+Q2.7,automation_suggestions_19,Other Occupation,"For documentation and style issue I guess that's a easier to develop an approach. Actually, some of them already implement things like renaming of variables, generation of comments and so on. Regarding the style, somethings very simple like regex might be sufficient"
+Q2.7,automation_suggestions_20,Industrial Developer,"There are many code checkers out there (FindBugs, ScalaStyle, PMD, ...). Maybe implement an integration with one of these tools during the reviewing process."
+Q2.7,automation_suggestions_21,Industrial Developer," As discussed before,  the initial step is detecting the problems/issues considering the changes performed over the time, before or during the code review, then find automation for fix the problems start to be a reasonable/easier thing to do in most topics :)"
+Q2.7,automation_suggestions_22,Senior Researcher," I would try to understand which problems are recurrent in code reviews, e.g.,  defining patterns and anti-patterns characterizing the ""code review process and collaborations"".  The I would automatically leverage tools for detecting such anti-patterns to highlight potential problems. Many of problems we face during code review are related to the miss match between expectations and outcomes of a code review. Reviewer provide feedback that are not exhaustive or timely reported. This makes often code reviews unproductive. A simple automation toward this direction could be predicting the required code review changes."
+Q2.7,automation_suggestions_23,Senior Researcher,N.A
+Q2.7,automation_suggestions_24,Industrial Developer,I think I answered this in the previous message (just apply that methodology to other topics in your taxonomy)
+Q2.7,automation_suggestions_25,Senior Researcher,"use template or patterns to conduct the auto-correctness. moreover, there are existing code clone detection to this end. however, not all the duplication should be refactored or merged, which brings the challenge for research to locate the merge/refactor-oriented code duplication."
+Q2.7,automation_suggestions_26,Senior Researcher,Naming: find the convention used mostly throughout the project and conform the remaining of names with it. Similarly for the rest. Whitespace usage: remove all the unnecessary white space (if there are two spaces between tokens etc).
+Q2.7,automation_suggestions_27,Open Source Developer,"Already described, but i think the best idea is to have a look at changes to heterogeneous types of data and recurrent change patterns to provide the automation i have envisioned/mentioned before."
+Q2.7,automation_suggestions_28,Industrial Developer,"From one side code and code changes metrics + code change patters 
+would a useful information to study previous changes in the software and its documentation to learn more about upcoming (and recurrent) mistakes.
+I would mine this information with some data mining techniques and machine learning to learn these patterns and/or identify some of the problems.
+Ont top of this, I think auto-fixing strategies could be envisioned."
+Q2.7,automation_suggestions_29,Senior Researcher,Manually 
+Q2.7,automation_suggestions_30,Open Source Developer,"Running tools that perform this analysis, and present findings in the code review system."
+Q2.7,automation_suggestions_31,Industrial Developer,"Static analysis of the code and having a couple of possible solutions to the problem. If a function is duplicated between two classes, that may be intentional to avoid coupling those classes, so we might want to ignore it. But if a function is duplicated within two classes that both inherit from the same parent class than the solution would be to put that function in the parent class."
+Q2.7,automation_suggestions_32,Other Occupation,N
+Q2.7,automation_suggestions_33,Industrial Developer,"For each problem/issues, I would focus on recurrent and relevant metrics, patterns and anti-patters (in some case NLP patterns, in other based on dynamic and static information) then on solutions  to detect, recommend or auto-fix them. "
+Q2.7,automation_suggestions_34,Industrial Developer,"as  previously mentioned:  some text mining and nlp analysis to detect patterns used o correct mistakes in the structure. In other case nlp or test mining would be not enough and some static, dynamic analysis of code under review would be  required (for example for logic and other issues)."
+Q2.7,automation_suggestions_35,Industrial Developer,"similar comments as before (detection and auto-fix) with Metrics based on static, dynamic analysis or detection strategies based on some nlp a alysis and similar approaches."
+Q2.7,automation_suggestions_36,Industrial Developer,"I would for sure try to learn more about the way people configure CD/CI pipelines, ASATs tools. Automation should consider more recent concept of CD, CI, and automated testing, summarization techniques, thus providing feedback on: the way a CD/CI pipeline is structured or is efficient, when the test is not of good quality suggest replacement of test suite or test methods. Metrics, dynamic/performance/static analysis, summarization techniques could be useful to provide all these information in an unified manner."
+Q2.7,automation_suggestions_37,Industrial Developer,I would define lightweight (not expensive metrics to compute) metrics to measure of detect  the issues.
+Q2.7,automation_suggestions_38,Industrial Developer,"empirical analysis, usage of nlp, static analysis, dynamic analysis,  definition of new metrics, studying recurrent patterns on how to model, detect and propose fixes for doc, style structure, resource, large defects.  - Then the developers can keep the solutions they prefer."
+Q2.7,automation_suggestions_39,Industrial Developer,"I would try to analyze code and other changes from the history of the project, detecting, metrics patterns, anti-patterns, thus predicting required changes, or recommending solution when possible."
+Q2.7,automation_suggestions_40,Industrial Developer,"Recommendation of potential solutions: something that leverage automatic test cases generation strategies to produce better tests, or provide replacement for tests submitted for review or providing feedback on the quality of my test code. For other problems: detection of recurrent problems and auto-fixes (or recommendation of potential solutions?)."
+Q2.7,automation_suggestions_41,Industrial Developer,Regex through code.
+Q2.7,automation_suggestions_42,Industrial Developer,"As mentioned before, something that give me feedback on what improve in the artefact composing my patch, like an automated CodeReviewDoctor analyzing my patch and providing feedback on the status of the patch itself and what to change of it. This by analyzing the introduced changes, added files, etc.
+- A fully automated solution should provide feedback on the change to perform,
+- then a semi-automated approach should be enacted on top of the CodeReviewDoctor or CodeReviewChangeDetector,  something like a CodeReviewChangeGenerator that provide potential solution to integrate in the current patch."
+Q2.7,automation_suggestions_43,Industrial Developer,"for example lightweight metrics highlighting whether my code introduced performance issues., or recurrent issues in configuration files."
+Q2.7,automation_suggestions_44,Industrial Developer,"build a comprehensive tool highlighting the changes to perform or the defects introduced in the documentation, while introducing (or evolving) my patch. This would require a tool analysing the code and other software artifacts changes from the first version of the patch and over the time, until the patch is ready to be submitted to the master repository. The tools should monitor  specific and evolving characteristics of the patch providing feedback on what improved over the time and what do not. Metrics based on code change analysis would be one solutions, but they should be provided in an unified manner."
+Q2.7,automation_suggestions_45,Industrial Developer,"I think I have explained a bit how I would approach this. I would use the notion of patterns, antipatterns to also fix/handle problems on resource consumption of my code, something not available in code review practices."
+Q2.7,automation_suggestions_46,CS Student,not sure about it.
+Q2.7,automation_suggestions_47,Open Source Developer,"on the configuration level would be great to have tool suggesting
+what to change over the time. For example when configuring a CD and CI pipelines, what i need to change to improve the overall developers productivity and development process. We would need metrics measuring the efficiency of a CD/CI pipeline and then understand which configuration and/or steps of the pipeline could be optimized at the configuration level. "
+Q2.7,automation_suggestions_48,Industrial Developer,I think i have discussed it already in previous questions.
+Q2.7,automation_suggestions_49,Industrial Developer,  in all elements of the taxonomy
+Q2.7,automation_suggestions_50,Industrial Developer,NA
+Q2.7,automation_suggestions_51,Open Source Developer,do not know/do not want to say
+Q2.7,automation_suggestions_52,Industrial Developer,not sure how to answer this

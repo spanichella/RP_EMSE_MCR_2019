@@ -1,0 +1,17 @@
+TASK1:
+
+Removing parameters from fseTest and doFseTest methods by deducing values from
+other parameter values;
+Should split testParsing and everythingTest in different tests (not done because time
+budget of 30 min exceeded);
+Replacing years, months, days, hours, minutes, seconds, milliseconds by TimeDuration
+object in parameter list;
+Splitting testDuration in several tests (not Qnished because time budget of 30 min
+exceeded).
+
+TASK2:
+
+Splitting method fmaTest by extracting parts of code on fmaGet, fmaGetAscending,
+fmaGetDescending, and fmaPut;
+Nohting in UtilCacheTests, I suspect that method basicTest is too long, but I do not see
+how to reduce it.

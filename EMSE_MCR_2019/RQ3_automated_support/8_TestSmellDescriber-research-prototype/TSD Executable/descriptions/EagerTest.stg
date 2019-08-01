@@ -1,0 +1,22 @@
+methodDescription(class_under_test, number_of_methods, called_methods, percentage_of_methods) ::= <%
+<\n>- This test method checks <number_of_methods> number of methods of <if(class_under_test)><class_under_test><else>the class being tested<endif>,
+<\n>  <percentage_of_methods> percentage of all methods of the original class.
+<\n>  The called methods are <called_methods>.
+%>
+
+classDescription(class_under_test, number_of_methods, method_names, only_one) ::= <%
+-<\t>This test contains <if(only_one)>a method (<method_names>) that checks<else><number_of_methods> number of methods (<method_names>) that check<endif> several methods of 
+<\n><\t><if(class_under_test)><class_under_test><else>the class being tested<endif> at once, which makes this test difficult to read,
+<\n><\t>understand, maintain, and makes the tests more dependent on each other.
+%>
+
+longRefactoring(refactoring_number) ::= <%
+<\n><\t>(<refactoring_number>) Consider using Fowler's Extract Method technique on the guilty test case
+<\n><\t>by separating the code into test methods that only test one method.
+<\n><\t>Simultaneously improve the documentative purpose of this test by using
+<\n><\t>meaningful names that describe the goal of the individual test cases.
+%>
+
+shortRefactoring(refactoring_number) ::= <%
+<\n>  Apply (<refactoring_number>) Extract Method to improve it.
+%>

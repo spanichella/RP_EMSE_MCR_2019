@@ -1,0 +1,9 @@
+preClassDescription(onlyOne) ::= <%
+<if(onlyOne)>A problem was<else>Some problems were<endif> detected in this test class:<\n>
+%>
+
+postClassDescription(onlyOne, smellInClassToAllInClass, smellInProjectToAllInProject, smellInClassToAllInProject) ::= <%
+<\n><\t><if(onlyOne)>This method accounts<else>These methods account<endif> for <smellInClassToAllInClass>% of all found problems in this test class.
+<\n><\t>This smell represents <smellInProjectToAllInProject>% of all found problems in the project with
+<\n><\t><smellInClassToAllInProject>% occurring in this test.<\n>
+%>

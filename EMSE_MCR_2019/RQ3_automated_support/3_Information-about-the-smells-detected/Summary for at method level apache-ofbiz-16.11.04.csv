@@ -1,0 +1,160 @@
+
+ 
+Class name: org.apache.ofbiz.base.conversion.test.TestJSONConverters
+ All Smells: EagerTest
+- Smelly Methods:
+	testJSONToMap(): EagerTest
+	testJSONToList(): EagerTest
+ 
+Class name: org.apache.ofbiz.base.test.GenericTestCaseBase
+ All Smells: LongParameterList, EagerTest
+- Smelly Methods:
+	assertEquals(String, Collection, Object): EagerTest
+	assertEqualsIterable(String, List, List, boolean, I, List, boolean): LongParameterList, EagerTest
+ 
+Class name: org.apache.ofbiz.base.util.string.test.FlexibleStringExpanderTests
+ All Smells: LongParameterList, EagerTest, LongMethod
+- Smelly Methods:
+	setUp(): EagerTest
+	doFseTest(String, String, FlexibleStringExpander, Map, TimeZone, Locale, String, Object, boolean): LongParameterList, LongMethod
+ 
+Class name: org.apache.ofbiz.entity.util.EntitySaxReaderTests
+ All Smells: EagerTest
+- Smelly Methods:
+	parse(): EagerTest
+ 
+Class name: org.apache.ofbiz.testtools.ModelTestSuite
+ All Smells: EagerTest, MessageChains, LongMethod
+- Smelly Methods:
+	parseTestElement(String, Element): EagerTest, LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.test.TimeDurationTests
+ All Smells: LongParameterList, LongMethod
+- Smelly Methods:
+	assertDurationLoop(String, Calendar, int, int, int, int, int, int, int, TimeDuration, boolean): LongMethod
+	assertDurationFields(String, int, int, int, int, int, int, int, String, TimeDuration, boolean, boolean): LongParameterList
+ 
+Class name: org.apache.ofbiz.order.test.SalesOrderTest
+ All Smells: RefusedParentBequest, LongMethod
+- Smelly Methods:
+	testCreateSalesOrder(): LongMethod
+ 
+Class name: org.apache.ofbiz.entity.test.EntityQueryTestSuite
+ All Smells: LongMethod
+- Smelly Methods:
+	testFilterByDate(): LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.test.StringUtilTests
+ All Smells: LongMethod
+- Smelly Methods:
+	testAppendTo(): LongMethod
+ 
+Class name: org.apache.ofbiz.shipment.test.IssuanceTest
+ All Smells: RefusedParentBequest, LongMethod
+- Smelly Methods:
+	testMultipleInventoryItemIssuance(): LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.cache.test.UtilCacheTests
+ All Smells: LongParameterList, LongMethod
+- Smelly Methods:
+	basicTest(UtilCache): LongMethod
+	assertKey(String, UtilCache, Object, Object, Object, int, Map): LongParameterList
+ 
+Class name: org.apache.ofbiz.base.util.collections.test.FlexibleMapAccessorTests
+ All Smells: LongParameterList, LongMethod
+- Smelly Methods:
+	fmaTest(String, String, String, String, Locale, Object, String): LongParameterList, LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.test.AssertTests
+ All Smells: LongMethod
+- Smelly Methods:
+	testAssert(): LongMethod
+ 
+Class name: org.apache.ofbiz.testtools.TestRunContainer
+ All Smells: LongMethod
+- Smelly Methods:
+	start(): LongMethod
+ 
+Class name: org.apache.ofbiz.entity.test.EntityTestSuite
+ All Smells: LongMethod
+- Smelly Methods:
+	testEntityCache(): LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.collections.test.GenericMapTest
+ All Smells: LongMethod
+- Smelly Methods:
+	testFoo(): LongMethod
+ 
+Class name: org.apache.ofbiz.common.test.PerformFindTests
+ All Smells: RefusedParentBequest, LongMethod
+- Smelly Methods:
+	prepareData(): LongMethod
+ 
+Class name: org.apache.ofbiz.order.test.OrderTestServices
+ All Smells: LongMethod
+- Smelly Methods:
+	createTestSalesOrderSingle(DispatchContext, Map): LongMethod
+ 
+Class name: org.apache.ofbiz.base.util.test.ObjectTypeTests
+ All Smells: LongParameterList
+- Smelly Methods:
+	simpleTypeConvert(Object, String, String, TimeZone, Locale, boolean): LongParameterList
+ 
+Class name: org.apache.ofbiz.base.lang.test.ComparableRangeTests
+ All Smells: LongParameterList
+- Smelly Methods:
+	comparableRangeTest(String, Comparable, Comparable, Comparable, Comparable, Comparable): LongParameterList
+ 
+Class name: org.apache.ofbiz.widget.test.WidgetMacroLibraryTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.shipment.thirdparty.usps.UspsServicesTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.accounting.thirdparty.clearcommerce.CCServicesTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.minilang.test.MiniLangTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.service.test.ServiceSOAPTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.product.test.InventoryItemTransferTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.testtools.EntityXmlAssertTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.order.test.FinAccountTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.testtools.ServiceTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.testtools.SimpleMethodTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.service.test.ServiceEntityAutoTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.service.test.ServiceEngineTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.product.test.StockMovesTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.service.test.XmlRpcTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.accounting.test.FinAccountTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.order.test.PurchaseOrderTest
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.content.test.LuceneTests
+ All Smells: RefusedParentBequest
+ 
+Class name: org.apache.ofbiz.service.testtools.OFBizTestCase
+ All Smells: RefusedParentBequest

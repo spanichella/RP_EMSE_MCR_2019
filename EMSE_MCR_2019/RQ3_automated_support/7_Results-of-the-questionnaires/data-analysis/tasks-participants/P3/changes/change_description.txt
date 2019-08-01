@@ -1,0 +1,13 @@
+TASK1
+
+Split eager tests;
+Replace Long Parameter lists with a test configuration under
+test for TimeDurationTests;
+
+TASK2
+
+Several eager tests exists in both cases. In some cases it is not easy to break them down
+because the ]xture is not set properly in advance. So ]rst setting up the ]xture is
+required, and then separating the long tests which test for many assertions, bringing
+down the performance. Again I have replaced Long Parameter lists by changing
+the object under test for UtilCacheTests;

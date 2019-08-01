@@ -1,0 +1,9 @@
+TASK1
+
+Replace Long Parameter lists in the object under test and
+updated the test case in TimeDurationTests 
+
+TASK2
+
+Split large test methods (D5);
+Reduce needed Parameters by introducing a test object (F4);

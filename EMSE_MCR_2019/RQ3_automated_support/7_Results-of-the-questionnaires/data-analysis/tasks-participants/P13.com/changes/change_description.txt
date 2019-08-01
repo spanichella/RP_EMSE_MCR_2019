@@ -1,0 +1,15 @@
+
+TASK1:
+
+In summary I have changed for FlexibleStringExpanderTests
+ doFseTest (i.e., split it into multiple (2) methods).
+For TimeDurationTests it was needed to created a new class containing the whole set of
+  parameters of assertDurationFields (done a similar operation for assertDurationLoop)
+Finally, I have also split assertDurationLoop into multiple (2) methods.
+
+
+TASK2:
+For the second task i have decided to UtilCacheTests fix the
+ the LongMethod in basicTest(), splitting the test in multiple one.
+Finally, for assertKey(), as done for doFseTest I have removed the 
+LongParameterList issue.

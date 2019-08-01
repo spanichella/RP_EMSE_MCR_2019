@@ -1,0 +1,10 @@
+TASK1
+
+For doFseTest I have created new Java classes to reduce the number of 
+parameters called in the test suite.
+
+TASK2
+For FlexibleMapAccessorTests i decided to create a new class to reduce 
+the list of parameters in the test cases.
+For UtilCacheTests i have not found critical issues so far.
+

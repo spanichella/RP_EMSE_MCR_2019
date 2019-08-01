@@ -1,0 +1,18 @@
+TASK1:
+
+I focused in the first task on 
+
+- the removal/reduction of parameters 
+from  doFseTest & fseTest obtaining the required values
+from other parameters.
+
+- incapsulating time elements (e.g., years, months, days, hours, etc.) 
+as  parameters of a new object;
+
+TASK2:
+
+I focused in the second task 
+
+- on the reduction/split of the test methods fmaTest by refactoring/extracting code on fmaGet, fmaGetAscending,
+fmaGetDescending;
+- Did not found critical problems in UtilCacheTests.

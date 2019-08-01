@@ -1,0 +1,15 @@
+
+TASK1:
+
+In FlexibleStringExpanderTests.java I have decided to split doFseTest into 2 methods
+Considering TimeDurationTests I have created a class 
+DataOfDurationParams to incapsulate all parameters passed to assertDurationFields. 
+In addition I have create data class DataOfTimeDuration to incapsulate all parameters passed to
+assertDurationLoop and split assertDurationLoop into two methods.
+
+
+TASK2:
+For what concerns UtilCacheTests.java
+	I have  detected and removed the LongMethod problem affecting basicTest(UtilCache) - split it.
+	Again for  assertKey() I have  detected and removed the LongParameterList problem
+	incapsulating the many parameters in one Object.

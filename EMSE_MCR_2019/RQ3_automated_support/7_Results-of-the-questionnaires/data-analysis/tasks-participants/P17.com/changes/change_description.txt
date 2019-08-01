@@ -1,0 +1,11 @@
+TASK1
+
+The only problem that is critical for me to fix is the one
+related to the LongParameterList  in TimeDurationTests (as suggested by the comments in the code).
+Hence, I have refactored both production and test code to make it more
+maintainable.
+
+TASK2
+
+Also in this case the only problem that was critical for me to fix is the one
+related to the LongParameterList  LongParameterList  in UtilCacheTests.

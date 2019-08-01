@@ -1,0 +1,8 @@
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+-<\t>This test subclasses a class of which it doesn't require all the methods and fields. The relation
+<\n><\t>hurts the clarity and organization of your system.^
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+<\n><\t>Refactor your test by creating a new sibling and pushing your fields and methods down to the new sibling.
+%>

@@ -1,0 +1,15 @@
+TASK1
+
+(1) I introduced new objects to pass all the data to reduce the number of parameters
+needed in the methods (in doFseTest, assertDurationFields, assertDurationLoop, and
+assertDuration). (2) I extracted the same lines to a new method to reduce the duplication
+(in doFseTest).
+
+task2
+
+(1) in FlexibleMapAccessorTests, I refactored the fmaTest method: 1.1) introduced new
+object to reduce the parameter numbers in this method; 1.2) extracted part of the code
+to a new test method to reduce the length of the code.
+(2) in UtilCacheTests, I removed some duplicated assertion statements in basicTest
+method.
+

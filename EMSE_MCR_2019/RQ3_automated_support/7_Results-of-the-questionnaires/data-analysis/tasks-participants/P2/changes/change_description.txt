@@ -1,0 +1,42 @@
+TASK1
+
+In FlexibleStringExpanderTests (see http://ix.io/17AJ ):
+- create data class FseTestData to contain all parameters passed to doFseTest
+- change signature of doFseTest: doFseTest(FseTestData d) and change all variables to
+access d.
+- split doFseTest into two methods doFseTestInput(FseTestData d) and
+doFseTestLocale(FseTestData d), containing about half of the original test each.
+- doFseTest now calls the two new methods
+In TimeDurationTests(see http://ix.io/17AL ):
+- create data class DurationData to contain all parameters passed to
+assertDurationFields
+- change signature of assertDurationFields: assertDurationFields(DurationData d) and
+change all variables to access d.
+- create data class TimeDurationData to contain all parameters passed to
+assertDurationLoop
+- change signature of assertDurationLoop: assertDurationLoop(TimeDurationData d)
+and change all variables to access d.
+- Split assertDurationLoop into 3 methods, extracting the StringBuilder/durationString
+part into a method createDurationSTring(TimeDurationData d) and the "d.right.set...)
+parts into a method updateCalendar(TimeDuration d). These two methods are called at
+the beginning of assertDurationLoop, the rest stays the same.
+
+TASK2
+
+In FlexibleMapAccessorTests (see http://ix.io/17AO ):
+- create data class FmaTestData<T> to contain all parameters passed to fmaTest
+- change signature of fmaTest: fmaTest(FmaTestData<t> d) and change all variables to
+access d.
+- make sure calls to fmaTest use the data class
+- Move most code from mfaTest into two new methods fmaTestGeneral and
+fmaTestFse. The crst checks the simple assertions, the other checks the rest.
+In UtilCacheTests (see http://ix.io/17AP ):
+- create data class KeyData<K,V> to contain all parameters passed to assertKey
+- change signature of assertKey: assertKey(KeyData<K,V> d) and change all variables to
+access d.
+- make sure calls to assertKey use the data class
+- move most code from basicTest to two new methods basicTestFirst and
+basicTestSecond (for lack of semantic understanding of what is tested). Both these
+methods have the signature (UtilCache<String, String> cache, long origByteSize) and are
+called from basicTest where origByteSize was calculated.
+

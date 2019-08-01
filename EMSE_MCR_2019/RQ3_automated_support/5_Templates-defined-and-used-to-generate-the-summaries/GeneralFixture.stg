@@ -1,0 +1,16 @@
+methodDescription(classUnderTest) ::= <%
+<\n>- This fixture is too general. 
+%>
+
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+-<\t>The fixture in this test is too general. Test cases only require part of the provided features. 
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+<\n><\t>(<refactoringNumber>) Use the fixture only for code that is shared by all tests. Extract the rest using
+<\n><\t>Fowler's Extract Method technique into the methods that use it. This will speed up the execution of your test.
+%>
+
+shortRefactoring(refactoringNumber) ::= <%
+<\n>  Apply (<refactoringNumber>) to improve the test.
+%>

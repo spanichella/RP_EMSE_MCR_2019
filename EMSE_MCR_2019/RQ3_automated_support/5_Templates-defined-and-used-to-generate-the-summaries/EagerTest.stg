@@ -1,0 +1,20 @@
+methodDescription(classUnderTest) ::= <%
+<\n>- This method checks too many methods of <if(classUnderTest)><classUnderTest><else>the class being tested<endif>. 
+%>
+
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+-<\t>This test contains <if(onlyOne)>a method that checks<else><numberOfMethods> number of methods that check<endif> too many methods of 
+<\n><\t><if(classUnderTest)><classUnderTest><else>the class being tested<endif> at once,
+<\n><\t>which makes this test difficult to read, understand and maintain. 
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+<\n><\t>(<refactoringNumber>) Consider using Fowler's Extract Method technique on the guilty test case
+<\n><\t>by separating the code into test methods that only test one method.
+<\n><\t>Simultaneously improve the documentative purpose of this test by using
+<\n><\t>meaningful names that describe the goal of the individual test cases.
+%>
+
+shortRefactoring(refactoringNumber) ::= <%
+<\n>  Apply (<refactoringNumber>) Extract Method to improve it.
+%>

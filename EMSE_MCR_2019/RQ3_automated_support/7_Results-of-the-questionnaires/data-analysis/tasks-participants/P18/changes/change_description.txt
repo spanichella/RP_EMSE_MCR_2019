@@ -1,0 +1,20 @@
+TASK1
+
+In FlexibleStringExpanderTests i have created a data class that contains the
+set of parameters passed to doFseTest; then i have split doFseTest into two methods reporting
+ about half of the original test each.
+In TimeDurationTests I have create a data class that contains the parameters passed to
+assertDurationFields, same for TimeDurationData; finally, i have split assertDurationLoop 
+into 3 methods.
+
+TASK2
+
+1 In FlexibleMapAccessorTests i have created a data class, thus
+refactored  fmaTest method (after introducing the new
+object).
+
+2 in UtilCacheTests, I was not entirely sure how to proceed, but
+    i have again created a new class containing the list of parameters passed to assertKey
+Then i moved most of tes code from basicTest to 2 novel test methods.
+
+

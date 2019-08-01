@@ -1,0 +1,15 @@
+TASK1:
+
+Remove parameters from fseTest and doFseTest methods 
+by creating new data class FseTestData that contain all parameters passed.
+Then split testParsing + everythingTest in different tests.
+
+Split testDuration in multiple tests.
+
+TASK2:
+
+In FlexibleMapAccessorTests 
+created data class incapsulating all parameters passed to fmaTest.
+
+In UtilCacheTests, split method basicTest in different tests.
+

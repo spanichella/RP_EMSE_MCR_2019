@@ -1,0 +1,8 @@
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+-<\t>This class has been found to do too little, which artificially increases the
+<\n><\t>code size and makes the system hard to maintain. 
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+Refactor it by eliminating this class.
+%>

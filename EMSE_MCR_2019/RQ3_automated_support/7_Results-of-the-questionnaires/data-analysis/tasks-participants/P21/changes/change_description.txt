@@ -1,0 +1,17 @@
+TASK1
+
+1. divide parseTest() into parserTestWithCache() and parserTestWithoutCache()
+2. doFseTest(...) test toooo many things with a long parameter list. So I divide it to
+subtasks.
+3. deOne a new internal class to hold the long list of time integers.
+4. divide assertDurationFields and assertDurationLoop into subtasks.
+
+TASK2
+
+1. seperate locale test out from fmaTest(...)
+2. seperate testMap out from fmaTest(...)
+3. delete assertHasSingleKey and assertNoSingleKey, its duplicate of assertKey
+
+
+
+

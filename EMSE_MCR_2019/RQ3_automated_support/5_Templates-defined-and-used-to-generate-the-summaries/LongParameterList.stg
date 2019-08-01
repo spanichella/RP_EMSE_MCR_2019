@@ -1,0 +1,19 @@
+methodDescription(classUnderTest) ::= <%
+<\n>- This method requires too many parameters. 
+%>
+
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+-<\t>This test contains <if(onlyOne)>a method that requires<else><numberOfMethods> methods that require<endif> a large amount of parameters.
+<\n><\t>A long list of parameters is hard to understand, to use and may become
+<\n><\t>inconsistent over time. 
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+<\n><\t>(<refactoringNumber>) If all parameters belong to the same object, replace the individual
+<\n><\t>data with the object itself. Otherwise introduce a new object that
+<\n><\t>contains all the passed data. 
+%>
+
+shortRefactoring(refactoringNumber) ::= <%
+<\n>  Apply a refactoring suggested in (<refactoringNumber>) to improve the code.
+%>

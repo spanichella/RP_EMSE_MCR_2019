@@ -1,0 +1,20 @@
+methodDescription(classUnderTest) ::= <%
+<\n>- This setUp fixture is too general. 
+%>
+
+classDescription(only_one, class_under_test, number_of_methods, method_names) ::= <%
+-<\t>The fixture in this test is too general. The resources that you set up there for the test methods
+<\n><\t><method_names> are not being shared as the individual test cases only
+<\n><\t>require part of the provided features. Consider refactoring it since this makes this test harder to
+<\n><\t>read and understand, may make the tests run more slowly.
+%>
+
+longRefactoring(refactoring_number) ::= <%
+<\n><\t>(<refactoring_number>) Use the fixture only for code that is shared by all test methods.
+<\n><\t>Extract the rest using Fowler's Extract Method technique into the methods that use it.
+<\n><\t>This will speed up the execution of your test.
+%>
+
+shortRefactoring(refactoring_number) ::= <%
+<\n>  Apply (<refactoring_number>) to improve the test.
+%>

@@ -1,0 +1,11 @@
+TASK1
+
+I focused my attention, in the short time that I had,
+in fixing the LongParameterList issues in TimeDurationTests.
+Thus, providing a test/class configuration under in TimeDurationTests.
+
+TASK2
+
+I found very difficult with the time allocated to split and improve test methods. 
+However,  I have fixed also here the LongParameterList issues in UtilCacheTests by changing
+the object under test.

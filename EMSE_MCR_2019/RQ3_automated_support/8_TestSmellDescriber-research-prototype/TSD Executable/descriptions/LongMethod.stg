@@ -1,0 +1,17 @@
+methodDescription(class_under_test, loc, max_loc) ::= <%
+<\n>- This method does too many things at once.
+%>
+
+classDescription(only_one, class_under_test, number_of_methods, method_names) ::= <%
+-<\t>This test contains <if(only_one)>a method (<method_names>) that does<else><number_of_methods> methods (<method_names>) that do<endif> too many things at once. This
+<\n><\t>makes the code hard to understand and maintain. 
+%>
+
+longRefactoring(refactoring_number) ::= <%
+<\n><\t>(<refactoring_number>) Shorten the method using Fowler's Extract Method, by finding parts
+<\n><\t>of the method that go together and extracting them to new methods.
+%>
+
+shortRefactoring(refactoring_number) ::= <%
+<\n>  Improve it by applying (<refactoring_number>).
+%>

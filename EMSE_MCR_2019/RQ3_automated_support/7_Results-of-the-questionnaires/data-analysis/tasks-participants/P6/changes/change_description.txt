@@ -1,0 +1,11 @@
+TASK1
+
+Eager test refactoring for testParsing, Eager test refactoring for doFseTest, Eager test
+refactoring for everythingTest; added a method by making hard-coding certain
+parameters to assertDurationFields, Eager test refactoring for assertDurationLoop,
+Eager test refactoring for testDuration
+
+TASK2
+
+Eager test refactoring for fmaTest, Lazy test refactoring for fmaTest and
+testFlexibleMapAccessor; Eager test refactoring for basicTest

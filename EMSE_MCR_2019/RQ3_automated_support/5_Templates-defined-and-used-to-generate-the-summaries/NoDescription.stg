@@ -1,0 +1,15 @@
+methodDescription(classUnderTest) ::= <%
+<\n>- No methodDescription. 
+%>
+
+classDescription(onlyOne, classUnderTest, numberOfMethods) ::= <%
+<\n>-<\t>No classDescription. 
+%>
+
+longRefactoring(refactoringNumber) ::= <%
+<\n><\t>No longRefactoring. 
+%>
+
+shortRefactoring(refactoringNumber) ::= <%
+<\n>  No shortRefactoring.
+%>
