@@ -67,7 +67,8 @@ RQ3_automated_support/
  Working Conference on Mining Software Repositories (MSR 2014). ACM, New York, NY, USA, 202-211. 
  DOI: http://dx.doi.org/10.1145/2597073.2597082   
 
-
+**RQ3_automated_support/** 
+	- content explained in the README.md file located in "RQ3_automated_support/README.md"
 
 
 
