@@ -63,7 +63,7 @@ RQ3_automated_support/
 - `Q2.1-Q2.7_question_index.csv` - table of IDs given to each participant-question pair for Q2.1-Q2.7 in order to trace back the feeback. 
 
 **RQ3_automated_support/** 
-	- content explained in the README.md file located in "RQ3_automated_support/README.md"
+	- content explained in the README.md file located in "RP_EMSE_MCR_2019/tree/master/EMSE_MCR_2019/RQ3_automated_support/README.md"
 
 ## References
 [1] Moritz Beller, Alberto Bacchelli, Andy Zaidman, and Elmar Juergens. 2014. Modern code reviews
