@@ -48,6 +48,7 @@ RQ3_automated_support/
     - `Q1.2_evaluation_survey.csv` - relevant survey feedback with additional taxonomy categories integrated into *CRAM*
     - `cram_classified.csv` - classified review comments (`gerrit_review_comments.csv`) into *CRAM*
     - `cram.pdf` - *CRAM* taxonomy
+    - `cram_classified_with_frequency_information2020.xls` - it contain the information used to compute the frequency of CRAM changes, derived by the analysis of the 211 commits
 
 **RQ2_automation_needs/** contains the encoded evaluation of the survey question Q2.1-2.7 for RQ2
 - `Q2.1-Q2.5_evaluation_survey.xlsx` - the encoded evaluation of the survey questions Q2.1-Q2.5 (used for the *Automation Needs* Section in the paper) and contains the following sheets:
@@ -61,8 +62,12 @@ RQ3_automated_support/
     - **aggregated by low-level taxonomy**: Aggregated mentionings of approaches/data by developers in the survey grouped by low-level taxonomy category.
     - **aggregated by high-level taxonomy**: Aggregated mentionings of approaches/data by developers in the survey grouped by high-level taxonomy category.
 - `Q2.1-Q2.7_question_index.csv` - table of IDs given to each participant-question pair for Q2.1-Q2.7 in order to trace back the feeback. 
+- `cram_survey-with_criticality_and_feasibility2020.xls` and `cram_survey-with_relevance_and_completeness_information2020.xls`: they contain we results of the survey, involving  14 additional participants (12 developers and 2
+researchers), not involved in the aforementioned survey, and performed to qualitatively assess the relevance and completeness
+of the identified MCR change types as well as assess how critical and feasible to implement are some of the
+identified techniques to support MCR activities. 
 
-**RQ3_automated_support/** 
+**RQ2_1_automated_support/** 
 	- content explained in the README.md file located in "RP_EMSE_MCR_2019/tree/master/EMSE_MCR_2019/RQ3_automated_support/README.md"
 
 ## References
