@@ -25,7 +25,7 @@ RQ2_automation_needs/
     Q2.6-Q2.7_evaluation_survey.xlsx
     Q2.1-Q2.7_question_index.csv
     
-RQ3_automated_support/
+No "RQ3_automated_support/" contain the results concerning RQ2.1 in the paper.
     content explained in the README.md file located in "RQ3_automated_support/README.md"
 ```
 
