@@ -1,0 +1,30 @@
+,"Survey Evaluation: “What Should I Change in My Patch?”
+An Empirical Investigation of Relevant Changes and Automation Needs in Modern Code Review
+
+Question 1.2 ""Does the taxonomy covers all changes that occur in code reviews?""",,
+,,,
+Participant ID,Occupation,Feedback,New Taxonomy Category
+participant_1,Industrial Developer,"- One thing I miss is cleanup/refactoring of the actual git commit graph, e.g. interactive rebase, squashing etc. (depending on team conventions)
+- even though this is covered by ""non-source files"" -> ""config files"" -> ""others"" I would consider adding runtime configuration (docker configs, ansible playbooks, deployment configs) as a separate item in config section",-
+participant_2,Other Occupation,"It's quite comprehensive, but I don't think it can or even should be exhaustive. Also, I don't agree with some terminology used; like what is source code and what is ""outside"". In my opinion a lot more files belong to the application's source. Example: config files or library versions to build the application.",-
+participant_3,Industrial Developer,typos,-
+participant_4,Other Occupation,Style and logic,-
+participant_7,CS Student,Perhaps it's included in Larger Defects: Completeness but I think that many good code reviews are covering edge cases and that the solution is covering the whole problem. --> Maybe that part could be expanded.,-
+participant_12,Industrial Developer,"How would you categorize a review comment like 'This function needs log messages'? Maybe that's 'New Functionality' (if there aren't logging statements already), maybe it's 'Standard Coding Conventions' (if there's a logging standard for the project), maybe there should also be a 'Logging' category as there is for Testing.",Logging
+participant_14,Senior Researcher,"I think the taxonomy covers a good part of the code reviewing process, but you could add something about ""versioning"".  I remember when I worked as a software developer, the header of the Java classes should contain the most recent SVN version that they were modified. I know this information could probably be fetched from the SVN itself, but maybe the company wants to quickly identify the latest revision of the file.",-
+participant_15,Industrial Developer,One of big types of code change come from side effect of another code change. domino effect has occur (most time in long period of time). ,-
+participant_16,CS Student,IMHO: GUI defects are not necessarily large defects,-
+participant_18,Senior Researcher,"The changes seem to be oriented on what you would get from a ""diff viewer"", I think you are missing more semantic changes. In my experience, code reviews often result in a change to the system architecture, like splitting an interface into two distinct interfaces, introducing abstractions, or the inclusion of design patterns. These more ""object-oriented"" changes are missing right now in the taxonomy.",Architectural Changes
+participant_21,Industrial Developer,"I have to say that the completeness of the taxonomy depends some time on the specific software organization: in general most software software look at the above aspects during code review, however, specific companies could have more specific requirements. Let's for example consider a company working on self-driving cars, in that case code review will require also to observe potential security and or testing issues, an aspect not considered massively in this taxonomy. I would consider to add also changes in the taxonomy that could be relevant also for less general software companies.",Security
+participant_26,Senior Researcher,/,-
+participant_27,Open Source Developer,"Partially... we mainly care, with the same importance, to
+-Documentation and coding style. 
+-Architecture patterns.
+-Error handling.
+-Test coverage. 
+-Performance monitoring.
+-Security. ",Security
+participant_30,Open Source Developer,"Should mention functional or integration testing, where software is integrated as it would be in production, and run against a battery of automated tests.",-
+participant_32,Other Occupation,Security is a major aspect,Security
+participant_34,Industrial Developer,maybe security is something we care also..,Security
+participant_37,Industrial Developer,"performance and security are missing i think, Is ASATs static analysis? In some cases the acronyms do not help understanding what actually there is in the taxonomy.",Security
